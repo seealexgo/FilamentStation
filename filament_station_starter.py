@@ -204,7 +204,8 @@ class QRScanner(threading.Thread):
         if cv2 is None or pyzbar is None:
             self.q.put(("error", "Missing OpenCV/pyzbar. Install deps."))
             return
-        self.cap = cv2.VideoCapture(self.camera_index)
+        src = CFG.get("camera_url")
+        self.cap = cv2.VideoCapture(src if src else self.camera_index)
         if not self.cap.isOpened():
             self.q.put(("error", f"Cannot open camera index {self.camera_index}"))
             return

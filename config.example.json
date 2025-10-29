@@ -15,6 +15,7 @@
     {"qr": "fs://loc/dryer", "name": "Dryer"}
   ],
   "pair_window_seconds": 10,
+  "camera_url": "http://<esp-ip>:81/stream",
   "camera_index": 0,
   "scan_interval_ms": 250,
   "kiosk_mode": false,
