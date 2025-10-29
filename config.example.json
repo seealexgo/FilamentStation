@@ -1,0 +1,22 @@
+{
+  "bins": [
+    {"name": "PLA Dry Box A", "target_rh": 40},
+    {"name": "PETG Dry Box B", "target_rh": 40},
+    {"name": "TPU Dry Box C", "target_rh": 35}
+  ],
+  "locations": [
+    {"qr": "fs://loc/pla-a", "name": "PLA Dry Box A"},
+    {"qr": "fs://loc/petg-b", "name": "PETG Dry Box B"},
+    {"qr": "fs://loc/tpu-c", "name": "TPU Dry Box C"},
+    {"qr": "fs://loc/ams-1", "name": "AMS Slot 1"},
+    {"qr": "fs://loc/ams-2", "name": "AMS Slot 2"},
+    {"qr": "fs://loc/ams-3", "name": "AMS Slot 3"},
+    {"qr": "fs://loc/ams-4", "name": "AMS Slot 4"},
+    {"qr": "fs://loc/dryer", "name": "Dryer"}
+  ],
+  "pair_window_seconds": 10,
+  "camera_index": 0,
+  "scan_interval_ms": 250,
+  "kiosk_mode": false,
+  "browser": "chromium-browser"
+}
